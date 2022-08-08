@@ -7,7 +7,9 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    overflow-x: hidden;
+}
 html {
     font-size: 100%;
     line-height: 1.15;
@@ -137,7 +139,7 @@ a {
     place-content: center;
     z-index: 9999;
     inset: 0;
-    background-color: rgba(255, 255, 255, 0.596);
+    background-color: var(--white);
 }
 
 .circle_loader {

@@ -12,12 +12,14 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/sohel.css">
 </head>
 
 <body class="sohel">
     <div class="loader" id="loader">
-        <div class="circle_loader"></div>
+        <img src="./assets/img/salad.gif" alt="">
     </div>
     <header id="header" class="fixed-top  bg-white py-1 py-md-4">
         <nav class="navbar navbar-expand-sm ">
@@ -27,10 +29,10 @@
                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
-                <div class="offcanvas offcanvas-start bg-danger" tabindex="-1" id="offcanvasExample"
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <div class="offcanvas-header justify-content-end">
+
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body justify-content-end">
@@ -45,7 +47,7 @@
                             <li class="nav-item me-lg-3">
                                 <a class="nav-link " href="#!">Testimonials</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item mt-3">
                                 <a class="d-sm-none cust_btn" href="#!">Shop Now</a>
                             </li>
                             <!-- <li class="nav-item dropdown">
@@ -74,10 +76,11 @@
                 <div class="row">
                     <div class="col-md-10 col-xl-8  mx-auto text-center">
 
-                        <h1 class="header_big_cont mx-auto pb-3 my-2 my-sm-3 mb-lg-5">
+                        <h1 class="header_big_cont mx-auto pb-3 my-2 my-sm-3 mb-lg-5" data-aos-duration="100"
+                            data-aos="fade-up">
                             Vegetables Are Must
                         </h1>
-                        <p>
+                        <p data-aos-duration="1300" data-aos="fade-up">
                             On A Diet.
                             Studies suggest that eating fresh, healthy food triggers an in-built cue in the brain to eat
                             a varied and balanced diet.So replacing unhealthy processed foods.Studies suggest that
@@ -86,10 +89,11 @@
                         </p>
                     </div>
                     <div class="col-12 mt-2 mt-sm-4">
-                        <img src="./assets/img/banner.jpg" class="img-fluid w-100" alt="salad plate">
+                        <img src="./assets/img/banner.jpg" data-aos-duration="1600" data-aos="zoom-out"
+                            class="img-fluid w-100" alt="salad plate">
                     </div>
                     <div class="text-center mb-3 mt-4">
-                        <a href="#!" class="cust_btn">Order Now</a>
+                        <a href="#!" class="cust_btn" data-aos="fade-up" data-aos-duration="1000">Order Now</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +103,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="mx-auto">
-                            <div class="roads_box  ">
+                            <div class="roads_box  " data-aos-duration="1000" data-aos="fade-right">
                                 <div
                                     class="roads_box_number_main roads_box_number_main_right_dot roads_box_number_main_right_dot_first">
                                     <div class="roads_box_number">
@@ -114,7 +118,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="roads_box roads_box_even -mt-2px ">
+                            <div class="roads_box roads_box_even -mt-2px " data-aos-duration="1100"
+                                data-aos="fade-left">
 
                                 <div
                                     class="roads_box_cont roads_box_cont_odd px-4 py-3  border-start-0 roads_box_cont_even  order-1 order-sm-0 ">
@@ -133,7 +138,7 @@
                             </div>
 
 
-                            <div class="roads_box -mt-2px ">
+                            <div class="roads_box -mt-2px " data-aos-duration="1200" data-aos="fade-right">
                                 <div class="roads_box_number_main roads_box_number_main_right_dot">
                                     <div class="roads_box_number">
                                         <h3 class="roads_number_tag"> 03</h3>
@@ -148,7 +153,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="roads_box roads_box_even -mt-2px ">
+                            <div class="roads_box roads_box_even -mt-2px " data-aos-duration="1300"
+                                data-aos="fade-left">
 
                                 <div
                                     class="roads_box_cont roads_box_cont_odd px-4 py-3  border-start-0 roads_box_cont_even order-1 order-sm-0 ">
@@ -164,7 +170,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="roads_box -mt-2px ">
+                            <div class="roads_box -mt-2px " data-aos-duration="1400" data-aos="fade-right">
                                 <div
                                     class="roads_box_number_main roads_box_number_main_right_dot roads_box_number_main_right_dot_fifth ">
                                     <div class="roads_box_number">
@@ -185,16 +191,17 @@
                     </div>
                     <div
                         class="col-lg-6 mt-4 mt-lg-0 ps-lg-5 d-flex align-items-center align-items-lg-start justify-content-center flex-column">
-                        <h2 class="roads_head">
+                        <h2 class="roads_head" data-aos-duration="1000" data-aos="fade-up">
                             Salad help you lose weight.
 
                         </h2>
-                        <p class="my-2 my-lg-4 text-center text-lg-start">Salad is one of the popular weight
+                        <p class="my-2 my-lg-4 text-center text-lg-start" data-aos-duration="1100" data-aos="fade-up">
+                            Salad is one of the popular weight
                             loss-friendly foods. You can
                             prepare a salad in different
                             ways when trying to lose weight. Salads are loaded with fibre.
                         </p>
-                        <div class="mt-2">
+                        <div class="mt-2" data-aos-duration="1200" data-aos="fade-up">
                             <a href="#!" class="cust_btn">Order Now</a>
 
                         </div>
@@ -205,28 +212,30 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <h1 class="text-center sec_head mb-3 mb-md-5">Best Salads</h1>
+                    <h1 class="text-center sec_head mb-3 mb-md-5" data-aos-duration="1000" data-aos="fade-up">Best
+                        Salads</h1>
                     <div class="col-md-6">
 
                         <div class="row">
                             <div class="col-12 mb-4">
                                 <div class="p-4 best_cont_box text-white">
-                                    <h4 class="mb-3">Chopped Raw Vegetables
+                                    <h4 class="mb-3" data-aos-duration="1200" data-aos="fade-up">Chopped Raw Vegetables
                                     </h4>
-                                    <p>Salad greens contain Vitamin A, Vitamin C, beta-carotene, calcium, folate,
+                                    <p data-aos-duration="1400" data-aos="fade-up">Salad greens contain Vitamin A,
+                                        Vitamin C, beta-carotene, calcium, folate,
                                         fiber, and phytonutrients (see Table 1). Leafy vegetables are a good choice
                                         for a healthful diet.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-sm-6 ">
+                            <div data-aos-duration="1000" data-aos="zoom-out" class="col-sm-6 ">
                                 <img src="./assets/img/best_1.jpg" class="img-fluid" alt="salad plate image">
                             </div>
-                            <div class="col-sm-6 mt-4 mt-sm-0">
+                            <div data-aos-duration="1200" data-aos="zoom-out" class="col-sm-6 mt-4 mt-sm-0">
                                 <img src="./assets/img/best_2.jpg" class="img-fluid" alt="salad plate image">
 
                             </div>
-                            <div class="my-4 text-center d-none d-lg-block">
+                            <div class="my-4 text-center d-none d-lg-block" data-aos-duration="1400" data-aos="fade-up">
                                 <a href="#!" class="cust_btn">Order Now</a>
 
                             </div>
@@ -234,8 +243,8 @@
 
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
-                        <img src="./assets/img/best_main.jpg" class="img-fluid" alt="salad plate image">
-                        <div class="my-4 text-center d-lg-none">
+                        <img src="./assets/img/best_main.jpg" class="img-fluid" alt="salad plate image" data-aos-duration="1300" data-aos="zoom-out" >
+                        <div class="my-4 text-center d-lg-none" data-aos-duration="1200" data-aos="fade-up">
                             <a href="#!" class="cust_btn">Order Now</a>
 
                         </div>
@@ -250,21 +259,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="./assets/img/salard_start_1.jpg" class="img-fluid" alt="salad plate image">
+                        <img src="./assets/img/salard_start_1.jpg" data-aos-duration="1200" data-aos="zoom-out"  class="img-fluid" alt="salad plate image">
                     </div>
                     <div class="col-lg-8 ">
                         <div class="mt-4 mt-lg-0 ps-lg-4 d-flex flex-column justify-content-between">
                             <div>
-                                <h2 class="roads_head mb-4">
+                                <h2 class="roads_head mb-4" data-aos-duration="1200" data-aos="fade-up">
                                     Salad starts with raw greens, lettuce, spinach, kale, mixed greens.
                                 </h2>
-                                <p>Popular foods like carrots and peas, peanut butter and jelly, and steak and potatoes
+                                <p data-aos-duration="1400" data-aos="fade-up">Popular foods like carrots and peas, peanut butter and jelly, and steak and potatoes
                                     show
                                     that some foods just taste better together. The same concept applies to salads too.
                                 </p>
                             </div>
                             <div class="">
-                                <img src="./assets/img/salard_start.jpg" class="img-fluid" alt="salad plate image">
+                                <img data-aos-duration="1200" data-aos="zoom-out"  src="./assets/img/salard_start.jpg" class="img-fluid" alt="salad plate image">
                             </div>
                         </div>
                     </div>
@@ -278,8 +287,8 @@
                     <div class="col-lg-8   ">
                         <div class=" mb-4">
                             <div class="">
-                                <h1 class=" sec_head mb-3 ">About Us</h1>
-                                <p>Ten the hastened steepest feelings pleasant few surprise property. An brother he
+                                <h1 class=" sec_head mb-3 " data-aos-duration="1200" data-aos="fade-up">About Us</h1>
+                                <p data-aos-duration="1400" data-aos="fade-up">Ten the hastened steepest feelings pleasant few surprise property. An brother he
                                     do colonel against minutes uncivil. Can how elinor warmly mrs basket marked.
 
                                 </p>
@@ -288,7 +297,7 @@
                         <div class="row" id="counter">
                             <div class="col-sm-6">
                                 <div
-                                    class="counter bg-dark text-white h-100 p-4 d-flex flex-column justify-content-around">
+                                    class="counter bg-dark text-white h-100 p-4 d-flex flex-column justify-content-around" data-aos-duration="1200" data-aos="fade-up">
 
                                     <div>
                                         <h2 class="counter-value mb-1 count percent" data-count="500">0
@@ -309,7 +318,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-12" data-aos-duration="1200" data-aos="fade-up">
                                         <div class=" bg_cust_light py-4 px-2 px-sm-4 mt-4 mt-sm-0">
                                             <h2 class="counter-value mb-1 count count_k" data-count="12">0
                                             </h2>
@@ -317,7 +326,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-12 ">
+                                    <div class="col-12 " data-aos-duration="1400" data-aos="fade-up">
                                         <div class="bg_cust_light py-4 px-2 px-sm-4 mt-4">
                                             <h2 class="counter-value mb-1 count count_k" data-count="8">0
                                             </h2>
@@ -333,7 +342,7 @@
 
 
                     </div>
-                    <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos-duration="1200" data-aos="zoom-out" >
                         <img src="./assets/img/about_img.jpg" class="img-fluid" alt="salad plate image">
                     </div>
                 </div>
@@ -342,12 +351,12 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <h1 class="text-center sec_head mb-3 mb-md-5">Testimonials</h1>
+                    <h1 class="text-center sec_head mb-3 mb-md-5" data-aos-duration="1200" data-aos="fade-up">Testimonials</h1>
 
                     <div class="col-md-3 col-lg-2">
-                        <div class="h-100 bg-dark d-flex flex-column align-items-center py-4 justify-content-center">
-                            <h2 class="best_teste_cont"> BEST TESTE</h2>
-                            <div class="mt-4 star">
+                        <div class="h-100 bg-dark d-flex flex-column align-items-center py-4 justify-content-center"  data-aos="fade-up">
+                            <h2 class="best_teste_cont" data-aos-duration="1400"> BEST TESTE</h2>
+                            <div class="mt-4 star" data-aos-duration="1600" data-aos="fade-up">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -358,7 +367,7 @@
                     </div>
                     <div class="col-md-9 col-lg-10 testi_box position-relative mt-5 mt-md-0">
                         <div class="swiper testimonial_slider pb-5 ">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper" data-aos-duration="1400" data-aos="fade-up">
                                 <div class="swiper-slide">
 
                                     <div class="row">
@@ -413,24 +422,24 @@
                         <div class="sub_div px-3 py-4 py-md-5">
                             <div class="row">
                                 <div class="col-md-10  mx-auto">
-                                    <h1 class="text-center sec_head mb-3 mb-md-5">SUBSCRIBE TO US
+                                    <h1 class="text-center sec_head mb-3 mb-md-5" data-aos-duration="1200" data-aos="fade-up">SUBSCRIBE TO US
                                     </h1>
-                                    <p>Studies suggest that eating fresh, healthy food triggers an in-built cue in the
+                                    <p data-aos-duration="1400" data-aos="fade-up">Studies suggest that eating fresh, healthy food triggers an in-built cue in the
                                         brain
                                         to
                                         eat a varied and balanced diet.So replacing unhealth
                                     </p>
                                     <div>
                                         <form class="row">
-                                            <div class="col-md-4 col-sm-6 col-lg">
+                                            <div class="col-md-4 col-sm-6 col-lg" data-aos-duration="1000" data-aos="fade-up">
                                                 <input type="text" class="form-control" placeholder="Your Name"
                                                     aria-label="Your Name">
                                             </div>
-                                            <div class="col-md-4 col-sm-6 mt-4 mt-sm-0 col-lg">
+                                            <div class="col-md-4 col-sm-6 mt-4 mt-sm-0 col-lg" data-aos-duration="1200" data-aos="fade-up">
                                                 <input type="text" class="form-control" placeholder="Enter your email."
                                                     aria-label="Enter your email">
                                             </div>
-                                            <div class="col-md-4 d-flex justify-content-center mt-4 mt-md-0 col-lg-3">
+                                            <div class="col-md-4 d-flex justify-content-center mt-4 mt-md-0 col-lg-3" data-aos-duration="1400" data-aos="fade-up">
                                                 <a href="#!" class="cust_btn">Subscibe Now
                                                 </a>
                                             </div>
@@ -479,10 +488,10 @@
 
                 <div class="row">
                     <div class="col-12 mb-4 text-center">
-                        <a class="navbar-brand logo " href="index.html">SM-<span>Foods</span></a>
+                        <a class="navbar-brand logo " data-aos-duration="1200" data-aos="fade-up" href="index.html">SM-<span>Foods</span></a>
 
                     </div>
-                    <div class="col-md col-sm-6 col-lg col-xl-3 mx-auto mb-4">
+                    <div class="col-md col-sm-6 col-lg col-xl-3 mx-auto mb-4" data-aos-duration="1200" data-aos="fade-up">
 
                         <!-- <h6 class="text-uppercase fw-bold mb-4">
                             <i class="fas fa-gem me-3"></i>Company name
@@ -508,18 +517,24 @@
                         <a class="nav-link me-3 " href="mailto:sohelmalek2109@gmail.com">
                             <p> sohelmalek2109@gmail.com</p>
                         </a>
-                        <div class="d-inline-flex social_icon">
-                            <a class=" m-1" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class=" m-1" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class=" m-1" href="#!"><i class="fab fa-instagram"></i></a>
-                            <a class=" m-1" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                            <a class=" m-1" href="#!"><i class="fab fa-github"></i></a>
+                        <div class="d-flex social_icon justify-content-center justify-content-md-start">
+
+                            <a data-cursor="pointer" target="_blank" href="https://www.facebook.com/sohelmalek03"
+                                class="me-2 "> <i class="fab fa-facebook-f"></i> </a> <a data-cursor="pointer"
+                                target="_blank" href="https://twitter.com/sohelmalek03" class="me-2 "> <i
+                                    class="fab fa-twitter"></i> </a> <a data-cursor="pointer" target="_blank"
+                                href="https://www.instagram.com/sohel_malek03" class="me-2 "> <i
+                                    class="fab fa-instagram"></i> </a> <a data-cursor="pointer" target="_blank"
+                                href="https://in.linkedin.com/in/sohel-malek-b4b846196" class="me-2 "> <i
+                                    class="fab fa-linkedin"></i> </a> <a data-cursor="pointer" target="_blank"
+                                href="https://github.com/sohelmalek" class="me-2 "> <i class="fab fa-github"></i> </a>
                         </div>
+
                     </div>
 
 
 
-                    <div class="col-md col-sm-6 col-lg col-xl-2 mx-auto mb-4">
+                    <div class="col-md col-sm-6 col-lg col-xl-2 mx-auto mb-4" data-aos-duration="1400" data-aos="fade-up">
 
                         <p>
                             <a href="#!" class="text-reset">Features</a>
@@ -538,7 +553,7 @@
 
 
 
-                    <div class="col-md col-sm-6 col-lg col-xl-2 mx-auto mb-4">
+                    <div class="col-md col-sm-6 col-lg col-xl-2 mx-auto mb-4" data-aos-duration="1600" data-aos="fade-up">
 
 
                         <p>
@@ -557,7 +572,7 @@
 
 
 
-                    <div class="col-md col-sm-6 col-lg col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div class="col-md col-sm-6 col-lg col-xl-3 mx-auto mb-md-0 mb-4" data-aos-duration="1800" data-aos="fade-up">
 
                         <p>
                             <a href="#!" class="text-reset">Feedback</a>
@@ -579,10 +594,11 @@
 
 
 
-        <div class="text-center p-4 copyright"  >
+        <div class="text-center p-4 copyright" >
             <!-- © 2022 Copyright: -->
             <p class="mb-0">Developed By
-            <a class=" " target="_blank" href="https://soheldemo.000webhostapp.com/">Sohel</a></p>  
+                <a class=" " target="_blank" href="https://soheldemo.000webhostapp.com/">Sohel</a>
+            </p>
         </div>
 
     </footer>
@@ -592,6 +608,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <script src="./assets/js/sohel.js"></script>

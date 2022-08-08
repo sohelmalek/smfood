@@ -102,4 +102,5 @@ $(document).ready(function () {
           },loop: true, spaceBetween: 10,
         // autoplay:true,
     });
+    AOS.init();
 });
